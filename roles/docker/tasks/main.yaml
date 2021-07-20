@@ -2,6 +2,6 @@
 - name: Docker Install
   shell:
     cmd: |
-    curl https://get.docker.com > docker-install.sh
-    chmod +x docker-install.sh
-    bash docker-install.sh
+      curl https://get.docker.com > docker-install.sh
+      chmod +x docker-install.sh
+      bash docker-install.sh

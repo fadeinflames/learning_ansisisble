@@ -1,6 +1,6 @@
 ---
 - name: Install Docker, Docker-Compose, Zabbix-server, zabbix-agent
-  host: all
+  hosts: all
   roles:
     - docker
     - docker-compose
