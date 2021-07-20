@@ -22,4 +22,4 @@
 - name: Upping zabbix
   shell:
     cmd: docker-compose up -d
-    chdir: /opt/zabbix
+    chdir: /opt/zabbix/
