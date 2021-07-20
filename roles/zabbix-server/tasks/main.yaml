@@ -1,3 +1,25 @@
 ---
+- name: Mkdir zabbix
+  file:
+    path: /opt/zabbix
+    state: directory
+
+- name: Mkdir zabbix
+  file:
+    path: /opt/zabbix/src
+    state: directory
+
+- name: Mkdir zabbix
+  file:
+    path: /opt/zabbix/src/mysql
+    state: directory
+
+- name: Copy compose
+  copy:
+    src: files/docker-compose.yaml
+    dst: /opt/zabbix
+
 - name: Upping zabbix
-  ansible.builtin.shell: docker-compose up -d
+  shell:
+    cmd: docker-compose up -d
+    chdir: /opt/zabbix
