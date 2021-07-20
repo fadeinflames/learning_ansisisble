@@ -8,3 +8,7 @@
   template:
     src: zabbix_agentd.conf
     dest: /etc/zabbix_agentd.conf
+
+- name: Upping zabbix
+  shell:
+    cmd: service zabbix-agent restart
