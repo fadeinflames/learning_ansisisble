@@ -2,3 +2,4 @@
 - name: Docker-compose install
   shell:
     cmd: apt install docker-compose
+  when: "'206.189.117.231' in inventory_hostname"
