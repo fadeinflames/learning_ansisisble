@@ -16,7 +16,7 @@
 
 - name: Copy compose
   copy:
-    src: files/docker-compose.yaml
+    src: files/docker-compose.yml
     dest: /opt/zabbix
 
 - name: Upping zabbix
