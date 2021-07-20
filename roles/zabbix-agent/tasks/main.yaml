@@ -1,7 +1,8 @@
 ---
 - name: Install zabbix-agent
   apt:
-    cmd: apt install zabbix-agent
+    name: zabbix-agent
+    update_cache: yes
 
 - name: Template agentd.conf
   template:
