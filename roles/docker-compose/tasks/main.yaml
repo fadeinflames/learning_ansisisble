@@ -1,5 +1,6 @@
 ---
 - name: Docker-compose install
-  shell:
-    cmd: apt install docker-compose
+  apt:
+    name: docker-compose
+    update_cache: yes
   when: "'206.189.117.231' in inventory_hostname"
